@@ -5,14 +5,11 @@ public class App {
     private ArrayList<Calificaciones> calificaciones = new ArrayList<>();
     private ArrayList<DatosAlumno> datosAlumnos = new ArrayList<>();
 
-    public void configuracion(){
-        int[][] calificacionesPrueba = {{80,60,70},{79,94,87},{64,66,88},{70,72,66},{99,97,82}};
-        String[][] nombreYGrupos = {{"Juan","A"},{"Alberto","A"},{"Pedro","B"},{"Victor","B"},{"Adriana","C"}};
-        int[][] edadYSemestre ={{21,5},{21,5},{45,1},{19,1},{22,7}};
+    public void configuracion(int numeroAlumnos, int[][] calificacionesPrueba, String[][] nombreYGrupos, int[][] edadYSemestre){
 
         System.out.println("Cuantos alumnos hay para reprobar?");
-        System.out.println("5");
-        int numeroAlumnos = 5;
+        System.out.println(numeroAlumnos);
+        
 
         int contador = 0;
         while (contador < numeroAlumnos) {
